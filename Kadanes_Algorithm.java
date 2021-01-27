@@ -19,11 +19,11 @@ class Kadanes_Algorithm{
         System.out.println();
         int count=kadansAlgorithm(arr);
         System.out.println(count);
-        System.out.println("elements are: ");
-        for(int i=0;i<list.size();i++){
-            System.out.print(list.get(i)+" ");
-        }
-        System.out.println();
+//         System.out.println("elements are: ");
+//         for(int i=0;i<list.size();i++){
+//             System.out.print(list.get(i)+" ");
+//         }
+//         System.out.println();
         scanner.close();
     }
 

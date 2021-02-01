@@ -1,19 +1,19 @@
 package com.company;
 import java.util.Scanner;
-class Node{
+class Node2{
     int data;
-    Node left;
-    Node right;
+    Node2 left;
+    Node2 right;
 }
 class BST{
-    public Node createNode(int data){
-        Node node=new Node();
+    public Node2 createNode(int data){
+        Node2 node=new Node2();
         node.data=data;
         node.left=null;
         node.right=null;
         return node;
     }
-    public Node insert_data(Node root,int data){
+    public Node2 insert_data(Node2 root,int data){
         if(root==null){
             return root=createNode(data);
         }
@@ -24,14 +24,14 @@ class BST{
         }
         return root;
     }
-    public int height(Node root){
+    public int height(Node2 root){
         if(root==null){
             return 0;
         }else{
             return Math.max(1+height(root.left),1+height(root.right));
         }
     }
-    public void inorderTraversal(Node root){
+    public void inorderTraversal(Node2 root){
         if(root!=null){
             inorderTraversal(root.left);
             System.out.print(root.data+" ");
@@ -46,7 +46,7 @@ class Main1{
         System.out.println("Enter the number of nodes: ");
         int n=scanner.nextInt();
         BST bst=new BST();
-        Node root=null;
+        Node2 root=null;
         System.out.println("Enter the nodes: ");
         for(int i=0;i<n;i++){
             int data=scanner.nextInt();

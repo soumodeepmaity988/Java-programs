@@ -47,16 +47,6 @@ class Tree{
             return temp;
         }
     }
-    //    public  int diameter(Node node){
-//        if(node==null){
-//            return 0;
-//        }
-//        int ld=diameter(node.left);
-//        int rd=diameter(node.right);
-//        int f=height(node.left)+height(node.right)+2;
-//        int dia=Math.max(f,Math.max(ld,rd));
-//        return dia;
-//    }
     public void display(Node head){
         if(head!=null){
             display(head.left);

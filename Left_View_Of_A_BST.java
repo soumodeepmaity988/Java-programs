@@ -22,11 +22,11 @@ class Tree{
         }
         return head;
     }
-    public void displays(Node head){
+    public void display(Node head){
         if(head!=null){
-            displays(head.left);
+            display(head.left);
             System.out.print(head.data+" ");
-            displays(head.right);
+            display(head.right);
         }
     }
     public int level=0;
@@ -55,7 +55,7 @@ class Main{
             head=tree.insertNode(head,data);
         }
         System.out.println("InorderTraversal is: ");
-        tree.displays(head);
+        tree.display(head);
         System.out.println();
         System.out.println("Left view of the tree is: ");
         tree.leftView(head,1);

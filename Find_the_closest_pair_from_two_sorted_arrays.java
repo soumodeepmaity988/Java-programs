@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-class Main3{
+class Main4{
     public static void main(String[]args){
         Scanner scanner=new Scanner(System.in);
         int n=scanner.nextInt();

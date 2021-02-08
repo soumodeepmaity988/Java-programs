@@ -43,3 +43,6 @@ class Main9{
         System.out.println();
     }
 }
+
+//5
+//2 0

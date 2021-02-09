@@ -5,8 +5,8 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 class Graph{
-    private int V;
-    private LinkedList<Integer>[] adj;
+    private final int V;
+    private final LinkedList<Integer>[] adj;
 
     Graph(int v){
         this.V=v;
